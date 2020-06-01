@@ -10,8 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Turtle Rock")
+                .font(.title)
+            Text("Joshua Tree National Park")
+            Button(action: {
+                print("Button action")
+            }) {
+                Text("Button label")
+            }
+        }
+
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
